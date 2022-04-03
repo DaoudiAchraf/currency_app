@@ -1,0 +1,68 @@
+@import "../../../styles/theme.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.commons {
+  padding-left: $page-padding-left;
+}
+
+.first-background {
+  height: 50%;
+  background-color: $primary-dark-color;
+  @extend .commons;
+
+  img {
+    margin-top: $page-padding-top;
+  }
+
+  h1 {
+    margin-top: 6%;
+    font-size: 6.16vh;
+    font-weight: 700;
+    line-height: 47px;
+    color: #fff;
+  }
+}
+
+.second-background {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  
+  background-color: $primary-color;
+  @extend .commons;
+
+  .history-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+    margin-right: 5%;
+    z-index: 1;
+  }
+}
+
+.second-background-footer {
+  margin: auto 0; 
+  h1 {
+    color: $white-color;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+  }
+  span {
+    font-size: 20px;
+    line-height: 23px;
+    color: $white-color;
+  }
+}
+
+.form-layout {
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  @extend .commons;
+}

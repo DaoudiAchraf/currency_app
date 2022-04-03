@@ -1,0 +1,60 @@
+@import "../../../styles/theme.scss";
+
+.layout { 
+  background-color: $primary_light-color;
+  border-radius: 15px;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+  padding: 3%;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .form-container {
+    display: flex;
+    flex: 1; 
+    align-items: flex-end;
+    flex-wrap: wrap;
+ 
+    img {
+      object-fit: contain;
+      margin: auto auto;
+    }
+    .layout_form-fields {
+    
+      display: flex;
+      flex: 1;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .layout_form-field {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        flex:0.4;
+      }
+    }
+
+    .layout_form-submit-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex:0.5
+    }
+
+    .layout_inner-form {
+      flex: 1;
+      display: grid;
+      grid-template-columns:1fr 1fr 0.2fr 1fr 0.5fr; 
+      grid-column-gap: 10px;
+    }
+
+    .layout_submit-form {
+      justify-self: flex-end;
+      flex: 0.2;
+      padding: 0 3% 0 3%;
+    }
+  }
+}
+
+// img {display: block; max-width: 100%; max-height: 100vh}

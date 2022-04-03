@@ -1,0 +1,15 @@
+@import "../../../styles/theme.scss";
+
+.history-page_layout {
+  display: flex;
+  flex-direction: column;
+  background-color: $primary_dark-color;
+  height: 100vh;
+  padding-right: $page-padding-left;
+  padding-left: $page-padding-left;
+  padding-top: $page-padding-top;
+
+  .logo-container {
+    margin-bottom: 7%;
+  }
+}
