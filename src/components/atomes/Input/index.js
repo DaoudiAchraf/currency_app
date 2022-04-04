@@ -1,13 +1,20 @@
+import React from "react";
 import PropTypes from "prop-types";
 import "./index.scss";
 
-const Input = ({ value, onChange }) => (
-  <input type="text" className="input" value={value} onChange={onChange} />
+const Input = ({ value, onChange, ...props }) => (
+  <input
+    type="number"
+    className="input"
+    value={value}
+    onChange={(e) => onChange(e.target.value)}
+    {...props}
+  />
 );
 
 Input.propTypes = {
   value: PropTypes.string,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
 };
 
 export default Input;

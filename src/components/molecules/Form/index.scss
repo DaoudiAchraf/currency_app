@@ -45,16 +45,15 @@
     .layout_inner-form {
       flex: 1;
       display: grid;
-      grid-template-columns:1fr 1fr 0.2fr 1fr 0.5fr; 
+      grid-template-columns:1fr 1fr 0.2fr 1fr 1fr; 
       grid-column-gap: 10px;
     }
 
     .layout_submit-form {
-      justify-self: flex-end;
-      flex: 0.2;
-      padding: 0 3% 0 3%;
+      display: flex;
+      justify-content: center;
+      padding: 1% 15% 1% 15%;
     }
   }
 }
 
-// img {display: block; max-width: 100%; max-height: 100vh}

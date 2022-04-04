@@ -1,13 +1,14 @@
+import React from "react";
 import PropTypes from "prop-types";
 import "./index.scss";
 
-const Select = ({ options }) => {
+const Select = ({ options, value, onChange }) => {
   return (
     <div className="select_layout">
-      <select name="cars" id="cars">
-        {options.map(({ value, label }) => (
-          <option key={value} value={value}>
-            {label}
+      <select value={value} onChange={(e) => onChange(e.target.value)}>
+        {options.map((option) => (
+          <option key={option} value={option}>
+            {option}
           </option>
         ))}
       </select>
@@ -16,7 +17,7 @@ const Select = ({ options }) => {
 };
 
 Select.propTypes = {
-  options: PropTypes.array
+  options: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Select;

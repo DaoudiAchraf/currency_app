@@ -1,7 +1,12 @@
+import React from "react";
 import PropTypes from "prop-types";
 import "./index.scss";
 
-const Button = ({ title }) => <div className="button">{title}</div>;
+const Button = ({ title, props }) => (
+  <button className="button" {...props}>
+    {title}
+  </button>
+);
 
 Button.propTypes = {
   title: PropTypes.string,

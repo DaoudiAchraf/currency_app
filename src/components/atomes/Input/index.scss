@@ -7,7 +7,21 @@
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.08);
   color: $white-color;
-  padding-left: 12%;
   outline: none;
-  width: 75%;
+  padding-left: 16px;
+  width: 85%;
+ 
+}
+
+
+/* Remove input arrows on Chrome, Safari, Edge, Opera */
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*  Remove input arrows on Firefox */
+.input[type=number] {
+  -moz-appearance: textfield;
 }
