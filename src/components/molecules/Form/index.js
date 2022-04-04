@@ -86,6 +86,7 @@ function Form() {
             <Label title="To" />
             <div>&nbsp;</div>
             <Input
+              type="number"
               value={currencyValue}
               onChange={setCurrencyValue}
               onFocus={() => setConverterResult(null)}

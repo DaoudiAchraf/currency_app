@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./index.scss";
 
-const Button = ({ title, props }) => (
-  <button className="button" {...props}>
+const Button = ({ title,...props }) => (
+  <button data-testid="button" className="button" {...props}>
     {title}
   </button>
 );

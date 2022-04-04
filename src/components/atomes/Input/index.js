@@ -4,7 +4,7 @@ import "./index.scss";
 
 const Input = ({ value, onChange, ...props }) => (
   <input
-    type="number"
+    data-testid="input"
     className="input"
     value={value}
     onChange={(e) => onChange(e.target.value)}
