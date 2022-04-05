@@ -1,17 +1,12 @@
-import React from 'react';
-import Router from './router';
-import "@fontsource/roboto";
-//  Context API
-import { ConverterContextProvider } from "./context/Converter.context";
+import React from "react";
+import Router from "./router";
 
+// Style
+import "@fontsource/roboto";
 import "../src/styles/theme.scss";
 
-function App() { 
-  return (
-    <ConverterContextProvider>
-        <Router />
-    </ConverterContextProvider>
-  );
+function App() {
+  return <Router />;
 }
 
 export default App;

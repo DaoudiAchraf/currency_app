@@ -15,7 +15,7 @@ function HistoryPage() {
   }, []);
 
   return (
-    <div className="history-page_layout">
+    <div data-testid="historyPage" className="history-page_layout">
       <div>
         <img src={logo} alt="Logo" />
       </div>
@@ -24,10 +24,13 @@ function HistoryPage() {
         <Link to="/">{"<"} Go back</Link>
       </div>
 
-      {history.length ? 
-        <Table dataSource={history} /> 
-        : <h2>No Data</h2>
-      }
+      {history.length ? (
+        <Table dataSource={history} />
+      ) : (
+        <div className="empty-data-container">
+          <h1>No Data found.</h1>
+        </div>
+      )}
     </div>
   );
 }

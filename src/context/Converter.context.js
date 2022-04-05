@@ -4,7 +4,6 @@ export const ConverterContext = createContext();
 
 export const ConverterContextProvider = ({ children }) => {
   const [currencyValue, setCurrencyValue] = useState("");
-  const [errorMsg, setErrorMsg] = useState(null);
   const [sourceCurrency, setSourceCurrency] = useState("EUR");
   const [targetCurrency, setTargetCurrency] = useState("USD");
   const [converterResult, setConverterResult] = useState(null);
@@ -13,8 +12,6 @@ export const ConverterContextProvider = ({ children }) => {
       value={{
         currencyValue,
         setCurrencyValue,
-        errorMsg,
-        setErrorMsg,
         sourceCurrency,
         setSourceCurrency,
         targetCurrency,

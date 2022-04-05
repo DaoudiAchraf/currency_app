@@ -1,11 +1,9 @@
-@import "../../../styles/theme.scss";
-
 .default-link {
   text-decoration: none !important;
-  color: $white-color;
+  color: #fff;
   opacity: 0.5;
   font-size: 12px;
 }
 .default-link:hover {
-  color: $white-color;
+  color: #fff;
 }

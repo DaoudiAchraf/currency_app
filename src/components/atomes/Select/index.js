@@ -5,7 +5,11 @@ import "./index.scss";
 const Select = ({ options, value, onChange }) => {
   return (
     <div className="select_layout">
-      <select value={value} onChange={(e) => onChange(e.target.value)}>
+      <select
+        data-testid="select"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+      >
         {options.map((option) => (
           <option key={option} value={option}>
             {option}

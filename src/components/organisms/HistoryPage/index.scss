@@ -12,4 +12,14 @@
   .link-wrapper {
     margin: 5% 0 5% 0;
   }
+
+  .empty-data-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+
+    h1{
+      color: white;
+    }
+  }
 }

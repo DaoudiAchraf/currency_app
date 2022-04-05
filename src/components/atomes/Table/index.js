@@ -6,7 +6,12 @@ import "./index.scss";
 
 const Table = ({ dataSource }) => {
   return (
-    <table className="table" cellSpacing={0} cellPadding={0}>
+    <table
+      data-testid="table"
+      className="table"
+      cellSpacing={0}
+      cellPadding={0}
+    >
       <tr>
         <th>Date</th>
         <th>From</th>
