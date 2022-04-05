@@ -10,7 +10,7 @@ In the project directory, run:
 
 Create a .env file in the root of your project
 
-REACT_APP_CURRENCY_API_ENDPOINT=api.currencylayer.com
+REACT_APP_CURRENCY_API_ENDPOINT=api.currencylayer.com <br />
 REACT_APP_CURRENCY_API_ACCESS_KEY=access_key
 
 ### Run app
