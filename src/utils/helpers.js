@@ -22,7 +22,6 @@ export const convert = async (amount, sourceCurrency, targetCurrency) => {
       const { quotes } = finalStepresponse.data;
       const rate = Object.values(quotes)[0];
       const result = intermediateStep * rate;
-      console.log("target", result);
       return result.toFixed(5);
     }
     
